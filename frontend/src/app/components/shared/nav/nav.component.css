@@ -5,6 +5,7 @@
 .navbar .dropdown-menu {
     background-color: #ece9e6;
     border-radius: 5px;
+    margin-left: 60px;
 }
 
 .navbar .dropdown-item:hover {

@@ -1,4 +1,11 @@
 .navbar {
     padding: 10px;
     background-color: #ece9e6;
-  }
+}
+
+.navbar-brand img {
+  width: auto;  /* Permite que la imagen mantenga su proporción */
+  height: 24px; /* Mantiene la altura como la original */
+  max-width: 100%; /* Evita que se agrande demasiado */
+  object-fit: contain; /* Asegura que la imagen se ajuste sin deformarse */
+}
