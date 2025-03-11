@@ -7,14 +7,14 @@ import { MedicamentosComponent } from './components/pages/medicamentos/medicamen
 import { SuplementosComponent } from './components/pages/suplementos/suplementos.component';
 
 
+
 export const routes: Routes = [
 
     {path: 'belleza', component: BellezaComponent, title: 'Belleza'},
     {path: 'home', component: HomeComponent, title: 'Inicio'},
-    {path: 'inicio_sesion', component: LoginComponent, title: 'Inicio de Sesion'},
+    {path: 'login', component: LoginComponent, title: 'CRUD'},
     {path: 'medicamentos', component: MedicamentosComponent, title: 'Medicamentos'},
-    {path: 'PageNotFound', title: 'Error 404', component: PageNotFoundComponent},
     {path:'suplementos', component: SuplementosComponent, title: 'Suplementos'},
+    {path: '**', title: 'Error 404', component: PageNotFoundComponent},
     {path: '', redirectTo: 'home', pathMatch: 'full'},
-    
 ];

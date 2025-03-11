@@ -1,16 +1,22 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ProductsService } from '../../../services/productos.service';
 
+import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-medicamentos',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './medicamentos.component.html',
   styleUrl: './medicamentos.component.css'
 })
 export class MedicamentosComponent implements OnInit{
   productosService = inject(ProductsService);
+  
 
   productos: any[] = [];
+  
+
+  nuevoProducto: any[] = [];
 
   ngOnInit(){
     this.obtenerProductosMedicamentos();
@@ -23,7 +29,6 @@ export class MedicamentosComponent implements OnInit{
     })
   }
 
-
-
+  
 
 }
