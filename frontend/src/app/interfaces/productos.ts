@@ -3,7 +3,6 @@ export interface Productos {
     precio: number;
     descripcion: string;
     foto: string;
-    stock: number;
-    precioPromo: number;
+    cantidad: number;
     categoria: string;
 }

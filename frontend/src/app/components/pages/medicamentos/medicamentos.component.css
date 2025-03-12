@@ -30,3 +30,32 @@
 .btn-group .btn {
     margin-right: 5px;
 }
+
+
+/* Formulario */
+
+.container {
+    min-height: 100vh; 
+}
+
+.card-actualizar{
+    background-color: #ece9e6;
+}
+
+
+.button-guardar {
+    background-color: #85669e !important;
+    border: none !important;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.1s;
+}
+
+.button-guardar:hover {
+    background-color: #85669e  !important;
+    transform: scale(1.05);
+}
+.textarea{
+    resize: none;
+}
