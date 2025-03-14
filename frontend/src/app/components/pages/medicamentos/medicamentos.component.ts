@@ -5,6 +5,7 @@ import { CommonModule, CurrencyPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
+
 @Component({
   selector: 'app-medicamentos',
   imports: [CommonModule, FormsModule, CurrencyPipe],
@@ -17,6 +18,7 @@ export class MedicamentosComponent implements OnInit{
   
 
   productos: any[] = [];
+  mostrarLista: boolean = true;
   
 
   nuevoProducto: any[] = [];
@@ -26,9 +28,11 @@ export class MedicamentosComponent implements OnInit{
     this.obtenerProductosMedicamentos();
   }
 
+  
+
   obtenerProductosMedicamentos() {
     this.productosService.getAllProduct().subscribe((res: any)=>{
-      console.log('Respuesta:', res);
+      /* console.log('Respuesta:', res); */
       this.productos = res.data.filter((producto: any)=> producto.categoria === 'Medicamentos');
     })
   }
@@ -37,6 +41,7 @@ export class MedicamentosComponent implements OnInit{
   editarProducto(producto: any) {
     this.productoSeleccionado = { ...producto }; 
     console.log("Producto seleccionado para edición:", this.productoSeleccionado);
+    this.mostrarLista = false;
   }
 
   seleccionarProducto(producto: any) {
@@ -45,12 +50,14 @@ export class MedicamentosComponent implements OnInit{
   }
   
 
-  
   actualizarProducto() {
-    console.log("Producto a actualizar:", this.productoSeleccionado); 
+    /* console.log("Producto a actualizar:", this.productoSeleccionado); */ 
     this.http.put(`http://localhost:4100/productos/${this.productoSeleccionado._id}`, this.productoSeleccionado)
       .subscribe(response => {
         console.log("Producto actualizado:", response);
+        this.obtenerProductosMedicamentos();
+        this.mostrarLista = true;
+        this.productoSeleccionado = null;
       }, error => {
         console.error("Error al actualizar producto:", error);
       });
@@ -70,6 +77,7 @@ export class MedicamentosComponent implements OnInit{
   
   cancelarEdicion() {
     this.productoSeleccionado = null;
+    this.mostrarLista = true;
   }
 
   

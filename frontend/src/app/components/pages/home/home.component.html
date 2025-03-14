@@ -1,25 +1,115 @@
-<div class="card mb-3 ">
-    <img src="https://cdn.pixabay.com/photo/2023/09/20/07/37/doctor-8264060_1280.jpg" class="card-img-top img" alt="Farmacia">
-    <div class="card-body ">
-      <h5 class="card-title">Nosotros</h5>
-      <p class="card-text">
-        <strong>Misión:</strong> En <strong>[Nombre de la Farmacia]</strong>, nos dedicamos a mejorar la calidad de vida de nuestros clientes proporcionando medicamentos, productos de cuidado personal y asesoría profesional con un servicio cálido, accesible y confiable.  
-        <br><br>
-        <strong>Visión:</strong> Aspiramos a ser la farmacia de referencia en el sector, destacándonos por nuestra innovación, calidad y compromiso con la salud. Nos proyectamos como una empresa en constante evolución, incorporando nuevas tecnologías para mejorar la experiencia de nuestros clientes.  
-        <br><br>
-        <strong>Valores Éticos:</strong>  
-        <br>
-        ✔ <strong>Compromiso:</strong> Brindamos un servicio basado en la responsabilidad y el bienestar del paciente.  
-        <br>
-        ✔ <strong>Honestidad:</strong> Actuamos con transparencia en la venta y asesoramiento de productos.  
-        <br>
-        ✔ <strong>Calidad:</strong> Garantizamos productos y servicios de excelencia para la salud de nuestros clientes.  
-        <br>
-        ✔ <strong>Respeto:</strong> Tratamos a cada persona con dignidad, empatía y atención personalizada.  
-        <br>
-        ✔ <strong>Innovación:</strong> Buscamos constantemente nuevas soluciones para mejorar el acceso a la salud.  
-        <br><br>
-        En <strong>[Nombre de la Farmacia]</strong>, nuestra prioridad es tu bienestar. 💙
-      </p>
-    </div>
+<!-- <div id="carouselFarmacia" class="carousel slide m-1" data-bs-ride="carousel">
+  <div class="carousel-inner">
+      
+      <div class="carousel-item active .2s">
+          <div class="banner-container">
+              <img src="https://img.freepik.com/foto-gratis/abstract-blur-centro-comercial_1203-8821.jpg?t=st=1741906304~exp=1741909904~hmac=98fa5fb87eee3e780bb1a4ea2b6c3ac8f5f94b7f33feedf236df0edec10315ee&w=1380" class="d-block w-100 banner-img" alt="Farmacia 1">
+              <div class="banner-overlay"></div>
+              <div class="banner-text">
+                  <h1 class="display-4 fw-bold">Bienvenido a <span class="text-primary texto-color">FarmiApp</span></h1>
+                  <p class="lead">Tu salud es nuestra prioridad. Productos de calidad y confianza.</p>
+                  <a routerLink="/medicamentos" class="btn btn-primary btn-lg boton-color">Ver Productos</a>
+              </div>
+          </div>
+      </div>
+     
+      <div class="carousel-item">
+          <div class="banner-container .2s trans">
+              <img src="https://img.freepik.com/foto-gratis/vista-superior-cuchara-medicamento-sobre-mesa_23-2148529742.jpg?t=st=1741906345~exp=1741909945~hmac=e075bf066a7a4476f0c591c909bec0454a4c27c6ab86fdd2ddf2bc8b27503b41&w=1380" class="d-block w-100 banner-img" alt="Farmacia 2">
+              <div class="banner-overlay"></div>
+              <div class="banner-text">
+                  <h1 class="display-4 fw-bold">Variedad de Medicamentos</h1>
+                  <p class="lead">Encuentra lo que necesitas con la mejor asesoría.</p>
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselFarmacia" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselFarmacia" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
 </div>
+
+<section class="section text-center bg-light" id="informacion">
+    <div class="container">
+        <h2>Conócenos</h2>
+        <div class="info-section">
+            <div class="info-box">
+                <h3>Sobre Nosotros</h3>
+                <p>Somos una farmacia comprometida con tu salud y bienestar. Ofrecemos productos de calidad con un servicio confiable.</p>
+            </div>
+            <div class="info-box">
+                <h3>Misión y Visión</h3>
+                <p><strong>Misión:</strong> Brindar soluciones de salud con excelencia y profesionalismo.</p>
+                <p><strong>Visión:</strong> Ser la farmacia líder en innovación y calidad de servicio.</p>
+            </div>
+            <div class="info-box">
+                <h3>Nuestro Compromiso</h3>
+                <p>Actuamos con responsabilidad y ética, asegurando la mejor atención y productos para nuestros clientes.</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active banner-container" style="background-image: url('https://img.freepik.com/foto-gratis/abstract-blur-centro-comercial_1203-8821.jpg?t=st=1741906304~exp=1741909904~hmac=98fa5fb87eee3e780bb1a4ea2b6c3ac8f5f94b7f33feedf236df0edec10315ee&w=1380');">
+                <div class="banner-overlay"></div>
+                <div class="carousel-caption text-white banner-text">
+                    <h1 class="display-4 fw-bold">Bienvenido a <span class="text-primary texto-color">FarmiApp</span></h1>
+                    <p>Tu salud es nuestra prioridad. Productos de calidad y confianza.</p>
+                    <a routerLink="/medicamentos"  class="btn btn-primary boton-color">Ver Productos</a>
+                </div>
+            </div>
+            <div class="carousel-item banner-container" style="background-image: url('https://img.freepik.com/foto-gratis/vista-superior-cuchara-medicamento-sobre-mesa_23-2148529742.jpg?t=st=1741906345~exp=1741909945~hmac=e075bf066a7a4476f0c591c909bec0454a4c27c6ab86fdd2ddf2bc8b27503b41&w=1380');">
+                <div class="banner-overlay"></div>
+                <div class="carousel-caption text-white banner-text">
+                    <h1>Variedad de Medicamentos</h1>
+                    <p>Encuentra lo que necesitas con la mejor asesoría.</p>
+                    
+                </div>
+            </div>
+            <div class="carousel-item banner-container" style="background-image: url('https://img.freepik.com/foto-gratis/clienta-pie-cerca-mostrador-farmacia_259150-57994.jpg?t=st=1741913703~exp=1741917303~hmac=bce8e2ea38d73cbf8d4320db86c029be568a99a8f20010c751129c2546829b2e&w=1380');">
+                <div class="banner-overlay"></div>
+                <div class="carousel-caption text-white banner-text">
+                    <h1>Atención Personalizada</h1>
+                    <p>Siempre estamos disponibles para ayudarte.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</header>
+
+<section class="section text-center bg-light" id="informacion">
+    <div class="container">
+        <h2 class="texto-color">Conócenos</h2>
+        <hr>
+        <div class="info-section">
+            <div class="info-box rounded-5 rounded-top-0 bord-colo">
+                <h3 class="texto-color ">Sobre Nosotros</h3>
+                <p>Somos una farmacia comprometida con tu salud y bienestar. Ofrecemos productos de calidad con un servicio confiable.</p>
+            </div>
+            <div class="info-box">
+                <h3 class="texto-color">Misión y Visión</h3>
+                <p><strong>Misión:</strong> Brindar soluciones de salud con excelencia y profesionalismo.</p>
+                <p><strong>Visión:</strong> Ser la farmacia líder en innovación y calidad de servicio.</p>
+            </div>
+            <div class="info-box">
+                <h3 class="texto-color">Nuestro Compromiso</h3>
+                <p>Actuamos con responsabilidad y ética, asegurando la mejor atención y productos para nuestros clientes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+

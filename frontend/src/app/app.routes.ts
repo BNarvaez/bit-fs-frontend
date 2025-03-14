@@ -9,6 +9,7 @@ import { CrearProductoComponent } from './components/pages/crear-producto/crear-
 
 
 
+
 export const routes: Routes = [
 
     {path: 'belleza', component: BellezaComponent, title: 'Belleza'},

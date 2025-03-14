@@ -1,28 +1,107 @@
-/* .card-information {
-    background-color: #ece9e6;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
 }
 
-.image-container img {
-    border-radius: 10px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
-    margin-bottom: 45px;
-} */
-
-
-.card-body{
-    background-color: #ece9e6;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
-    border: #85669e;
+/* Estilos del carrusel */
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
-.img{
-    background-color: #ece9e6;
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
-    border: #6d6079; 
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 24, 24, 0.5);
+    z-index: 1;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(54, 53, 53, 0.7);
+    z-index: 2;
+}
+
+.carousel-caption h1 {
+    animation: fadeInDown 2s ease-in-out;
+}
+
+.carousel-caption p {
+    animation: fadeInUp 2s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.texto-color {
+    color: #9f84b1 !important;
+}
+
+.boton-color {
+    background-color: #9f84b1 !important;
+    border-color: #9f84b1;
+}
+
+.btn-lg {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+}
+
+.carousel-inner .carousel-item {
+    transition: transform 1s ease-in-out;
+}
+
+/* Estilos adicionales para secciones */
+.section {
+    padding: 80px 0;
+}
+
+.bord-colo {
+    border-color: #9f84b1 !important;
+}
+
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.info-box {
+    flex: 1;
+    min-width: 300px;
+    padding: 30px;
+    transition: transform 0.3s;
+}
+
+.info-box:hover {
+    transform: scale(1.05);
+}
+

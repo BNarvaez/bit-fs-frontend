@@ -18,6 +18,7 @@ export class SuplementosComponent{
  
 
   productos: any[] = [];
+  mostrarLista: boolean = true;
 
   nuevoProducto: any[] = [];
   productoSeleccionado: any = null;
@@ -41,6 +42,7 @@ export class SuplementosComponent{
   editarProducto(producto: any) {
     this.productoSeleccionado = { ...producto }; 
     console.log("Producto seleccionado para edición:", this.productoSeleccionado);
+    this.mostrarLista = false;
   }
 
   seleccionarProducto(producto: any) {
@@ -55,6 +57,9 @@ export class SuplementosComponent{
     this.http.put(`http://localhost:4100/productos/${this.productoSeleccionado._id}`, this.productoSeleccionado)
       .subscribe(response => {
         console.log("Producto actualizado:", response);
+        this.obtenerProductosSuplementos();
+        this.mostrarLista = true;
+        this.productoSeleccionado = null;
       }, error => {
         console.error("Error al actualizar producto:", error);
       });
@@ -74,6 +79,7 @@ export class SuplementosComponent{
   
   cancelarEdicion() {
     this.productoSeleccionado = null;
+    this.mostrarLista = true;
   }
   
 

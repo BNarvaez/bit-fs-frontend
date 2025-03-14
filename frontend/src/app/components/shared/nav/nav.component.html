@@ -1,32 +1,39 @@
 <nav class="navbar navbar-expand-lg ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container"> 
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="https://github.com/BNarvaez/imagenes/blob/main/Img/logoFarma.png?raw=true"
+         alt="Logo" width="80" height="auto" class="d-inline-block align-text-center me-2 ">
+        <span class="fw-bold text-light">FarmiApp</span>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
           <li class="nav-item">
-            <a class="nav-link active" routerLink="/home">Home</a>
+            <a class="nav-link active text-light" routerLink="/home">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Productos
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" routerLink="/medicamentos">Medicamentos</a></li>
-              <li><a class="dropdown-item" routerLink="/belleza">Productos Belleza</a></li>
+              <li><a class="dropdown-item " routerLink="/belleza">Productos Belleza</a></li>
               <li><a class="dropdown-item" routerLink="/suplementos">Suplementos</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/crear">Administrador</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarCrud" role="button" data-bs-toggle="dropdown" aria-expanded="false">Administrador
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarCrud">
+              <li><a class="dropdown-item" routerLink="/crear">Crear Producto</a></li>
+            </ul>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-          <button class="btn btn-outline-success boton" type="submit">Buscar</button>
-        </form>
       </div>
     </div>
   </nav>

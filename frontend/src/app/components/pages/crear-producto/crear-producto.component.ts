@@ -53,6 +53,7 @@ obtenerProductosPorCategoria(categoria: string) {
     this.productoService.createProduct(producto).subscribe((res: any) => {
       console.log('Respuesta:', res);
       this.obtenerProductosPorCategoria(this.categoria);
+      window.location.reload()
     })
   }
 
