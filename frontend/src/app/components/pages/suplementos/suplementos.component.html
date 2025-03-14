@@ -17,7 +17,7 @@
                   <p class="card-text"><small class="text-muted">Categoría: {{ producto.categoria }}</small></p>
                   <div class="d-flex justify-content-center gap-2">
                     <button class="btn btn-primary button-buy" (click)="editarProducto(producto)">Editar</button>
-                    <button class="btn btn-danger button-buy" (click)="eliminarProducto(producto.id)">Eliminar</button>
+                    <button class="btn btn-danger button-buy" (click)="eliminarProducto(producto._id)">Eliminar</button>
                   </div>
                 </div>
               </div>
